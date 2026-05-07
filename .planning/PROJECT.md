@@ -23,10 +23,10 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 - [x] All current sections preserved: Advertising (Broadcast & Digital Producing, Copywriting), Film-TV, UX Design, Social & Transmedia, Publishing, About — Validated in Phase 03: Portfolio & Video
 - [x] Video integration: featured work embedded (Vimeo/YouTube), rest as clickable thumbnails — Validated in Phase 03: Portfolio & Video
 - [x] Contentful headless CMS for content management (projects, videos, press, blog) — Validated in Phase 02: CMS Content Layer
-- [ ] Contact form for direct outreach
-- [ ] Press/News page (Yvonne Russo-inspired) for press mentions, articles, features
-- [ ] Resume/CV page (viewable and downloadable)
-- [ ] Blog for written content, articles, behind-the-scenes
+- [x] Contact form for direct outreach — Validated in Phase 04: Content Pages
+- [x] Press/News page (Yvonne Russo-inspired) for press mentions, articles, features — Validated in Phase 04: Content Pages
+- [x] Resume/CV page (viewable and downloadable) — Validated in Phase 04: Content Pages
+- [x] Blog for written content, articles, behind-the-scenes — Validated in Phase 04: Content Pages
 
 ### Out of Scope
 
