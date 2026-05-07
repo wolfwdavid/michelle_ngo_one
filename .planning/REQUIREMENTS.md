@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage
 
-- [ ] **HOME-01**: Homepage displays hero section with Michelle's name, tagline, and brief intro
-- [ ] **HOME-02**: Homepage shows one featured video per category (6 total: Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, Copywriting)
+- [x] **HOME-01**: Homepage displays hero section with Michelle's name, tagline, and brief intro
+- [x] **HOME-02**: Homepage shows one featured video per category (6 total: Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, Copywriting)
 - [ ] **HOME-03**: Clicking a category on the homepage expands remaining videos from that category inline with animation
 - [ ] **HOME-04**: Homepage includes a short about snippet with link to full About page
-- [ ] **HOME-05**: Homepage displays recent press highlights
+- [x] **HOME-05**: Homepage displays recent press highlights
 
 ### Navigation
 
@@ -23,11 +23,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Portfolio
 
-- [ ] **PORT-01**: Each category (Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, Copywriting) has a dedicated page showing all projects
+- [x] **PORT-01**: Each category (Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, Copywriting) has a dedicated page showing all projects
 - [x] **PORT-02**: Project entries display as video thumbnail grid with play overlay icons (Isotope Films-style)
 - [x] **PORT-03**: Featured projects use embedded Vimeo/YouTube players (facade pattern — thumbnail first, load iframe on click)
 - [x] **PORT-04**: Secondary projects display as clickable thumbnails
-- [ ] **PORT-05**: Each project has a detail view with case study content (role, challenge, approach, outcome, credits)
+- [x] **PORT-05**: Each project has a detail view with case study content (role, challenge, approach, outcome, credits)
 - [x] **PORT-06**: Video embeds use lazy-loading facade pattern for performance (critical with 147+ videos)
 
 ### Video
@@ -35,7 +35,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **VID-01**: Lightbox/modal video player — click thumbnail to watch without leaving the page
 - [ ] **VID-02**: Modal handles keyboard navigation and focus trapping for accessibility
 - [x] **VID-03**: Videos sourced from Vimeo (user2149742) and YouTube playlist
-- [ ] **VID-04**: Filmography/credits list page with structured data (year, role, production type)
+- [x] **VID-04**: Filmography/credits list page with structured data (year, role, production type)
 
 ### Content Pages
 
@@ -103,24 +103,24 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HOME-01 | Phase 3 | Pending |
-| HOME-02 | Phase 3 | Pending |
+| HOME-01 | Phase 3 | Complete |
+| HOME-02 | Phase 3 | Complete |
 | HOME-03 | Phase 3 | Pending |
 | HOME-04 | Phase 3 | Pending |
-| HOME-05 | Phase 3 | Pending |
+| HOME-05 | Phase 3 | Complete |
 | NAV-01 | Phase 1 | Complete |
 | NAV-02 | Phase 1 | Complete |
 | NAV-03 | Phase 1 | Complete |
-| PORT-01 | Phase 3 | Pending |
+| PORT-01 | Phase 3 | Complete |
 | PORT-02 | Phase 3 | Complete |
 | PORT-03 | Phase 3 | Complete |
 | PORT-04 | Phase 3 | Complete |
-| PORT-05 | Phase 3 | Pending |
+| PORT-05 | Phase 3 | Complete |
 | PORT-06 | Phase 3 | Complete |
 | VID-01 | Phase 3 | Pending |
 | VID-02 | Phase 3 | Pending |
 | VID-03 | Phase 3 | Complete |
-| VID-04 | Phase 3 | Pending |
+| VID-04 | Phase 3 | Complete |
 | CONT-01 | Phase 4 | Pending |
 | CONT-02 | Phase 4 | Pending |
 | CONT-03 | Phase 4 | Pending |
