@@ -51,7 +51,7 @@ Exceptions: Header height is 64px (h-16 in Tailwind). Mobile drawer width is 288
 |------|------|--------|-------------|-------|
 | Body | 16px (text-base) | 400 (regular) | 1.5 | Placeholder page text, drawer nav links, footer text |
 | Label | 14px (text-sm) | 400 (regular) | 1.4 | Desktop nav items, social link labels, copyright line |
-| Heading | 24px (text-2xl) | 600 (semibold) | 1.2 | Placeholder page titles (e.g., "Advertising", "About") |
+| Heading | 24px (text-2xl) | 600 (semibold) | 1.2 | Placeholder page titles, site name in header |
 | Display | 32px (text-3xl) | 600 (semibold) | 1.2 | Homepage placeholder hero text ("Michelle Ngo") |
 
 Font family: `'Inter', ui-sans-serif, system-ui, sans-serif` declared via `@theme { --font-sans }` in app.css.
@@ -77,7 +77,7 @@ Accent reserved for:
 1. Active/current navigation link indicator
 2. Hovered navigation links (text color transition)
 3. Social icon hover state
-4. "Contact" link in footer on hover
+4. "Contact Me" link in footer on hover
 5. Focus ring color for keyboard navigation (outline-color)
 
 Accent is NOT used for: backgrounds, borders at rest, body text, headings, or placeholder content.
@@ -102,7 +102,7 @@ Components built in this phase, with visual specs.
 | Horizontal padding | 16px mobile, 24px tablet, 32px desktop |
 
 Contents:
-- Left: Site name "Michelle Ngo" as text link (20px, semibold, tracking-tight)
+- Left: Site name "Michelle Ngo" as text link (24px / text-2xl, semibold, tracking-tight)
 - Center/Right (desktop, lg:flex): Nav items in a row with 24px gap
 - Right (mobile, lg:hidden): Hamburger button (24x24px icon, 44x44px touch target)
 
@@ -137,9 +137,9 @@ Contents:
 | Horizontal padding | 16px mobile, 32px desktop |
 
 Contents:
-- Row 1: Social icons (IMDb, LinkedIn, Vimeo, YouTube) centered, 16px gap, 20x20px icon size
+- Row 1: Social icons (IMDb, LinkedIn, Vimeo, YouTube) centered, 16px gap, 20x20px icon size. Icons use `aria-label` only (no visible text label beside the icon).
 - Row 2: Copyright line centered, text-sm, text-gray-500, 16px below icons
-- Row 3: "Contact" text link centered, text-sm, text-gray-500, hover:text-accent, 8px below copyright
+- Row 3: "Contact Me" text link centered, text-sm, text-gray-500, hover:text-accent, 8px below copyright
 
 Copyright format: `(c) 2026 Michelle Ngo`
 
@@ -175,7 +175,7 @@ Homepage placeholder is special:
 | Placeholder page body | Content coming soon. |
 | Nav items (in order) | Home, Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, About |
 | Footer copyright | (c) 2026 Michelle Ngo |
-| Footer contact link | Contact |
+| Footer contact link | Contact Me |
 | Mobile drawer close button | aria-label: "Close menu" |
 | Hamburger button | aria-label: "Open menu" |
 | Social link labels | IMDb, LinkedIn, Vimeo, YouTube |
@@ -220,7 +220,7 @@ Source: D-03 (slide-out drawer), D-11 (flat nav bar), RESEARCH.md Pitfall 6 (use
 | Close button | `aria-label="Close menu"` |
 | Drawer backdrop | `role="presentation"` (not interactive landmark) |
 | Nav element | `<nav>` semantic element for both desktop and drawer |
-| Social links | `target="_blank" rel="noopener noreferrer"`, descriptive text or aria-label |
+| Social links | `target="_blank" rel="noopener noreferrer"`, aria-label per icon (no visible text label) |
 | Active link | Visually distinct (accent color) + `aria-current="page"` |
 | Focus visible | 2px accent outline, 2px offset on all interactive elements |
 | Color contrast | Text primary (#1A1A1A) on white: 16.5:1 (AAA). Text secondary (#6B7280) on white: 5.0:1 (AA). Accent (#4A6FA5) on white: 4.6:1 (AA for large text, use with 16px+ or add underline for links). |
