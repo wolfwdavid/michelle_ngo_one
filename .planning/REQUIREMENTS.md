@@ -58,7 +58,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **CMS-01**: Contentful headless CMS integration — all projects, press, blog posts, and resume managed via Contentful
 - [x] **CMS-02**: Content model supports: Projects (with category, video URLs, case study fields), Press Items, Blog Posts, Resume, Site Settings
-- [ ] **CMS-03**: Contentful webhook triggers GitHub Actions rebuild for automated content updates
+- [x] **CMS-03**: Contentful webhook triggers GitHub Actions rebuild for automated content updates
 
 ### Technical
 
@@ -66,8 +66,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **TECH-02**: Styled with Tailwind CSS v4
 - [x] **TECH-03**: Static site generation via adapter-static for GitHub Pages
 - [x] **TECH-04**: GitHub Pages deployment with .nojekyll file and correct base path config
-- [ ] **TECH-05**: SEO fundamentals — meta tags, Open Graph, structured data (Person schema)
-- [ ] **TECH-06**: Image optimization (WebP/AVIF, responsive srcset, lazy loading)
+- [x] **TECH-05**: SEO fundamentals — meta tags, Open Graph, structured data (Person schema)
+- [x] **TECH-06**: Image optimization (WebP/AVIF, responsive srcset, lazy loading)
 
 ## v2 Requirements
 
@@ -134,13 +134,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DES-05 | Phase 1 | Complete |
 | CMS-01 | Phase 2 | Complete |
 | CMS-02 | Phase 2 | Complete |
-| CMS-03 | Phase 2 | Pending |
+| CMS-03 | Phase 2 | Complete |
 | TECH-01 | Phase 1 | Complete |
 | TECH-02 | Phase 1 | Complete |
 | TECH-03 | Phase 1 | Complete |
 | TECH-04 | Phase 1 | Complete |
-| TECH-05 | Phase 2 | Pending |
-| TECH-06 | Phase 2 | Pending |
+| TECH-05 | Phase 2 | Complete |
+| TECH-06 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 38 total

@@ -13,7 +13,7 @@ This roadmap delivers a modern SvelteKit portfolio site for Michelle Ngo, a mult
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Deployment** - SvelteKit project with routing, navigation, Tailwind styling, and working GitHub Pages deployment (completed 2026-05-07)
-- [ ] **Phase 2: CMS & Content Layer** - Contentful integration with content models, data fetching, image optimization, and automated rebuilds
+- [x] **Phase 2: CMS & Content Layer** - Contentful integration with content models, data fetching, image optimization, and automated rebuilds (completed 2026-05-07)
 - [ ] **Phase 3: Portfolio & Video** - Homepage, all portfolio category pages, project details, and video playback with facade pattern
 - [ ] **Phase 4: Content Pages** - About, Press/News, Resume/CV, Blog, and Contact form
 - [ ] **Phase 5: Design Polish & Animations** - Scroll animations, page transitions, and visual refinement across all pages
@@ -51,7 +51,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Contentful SDK client, TypeScript content types, query functions, image helper, Vitest setup
-- [ ] 02-02-PLAN.md — SEO component, ContentfulImage component, Rich Text renderer, SiteSettings layout load, deploy webhook
+- [x] 02-02-PLAN.md — SEO component, ContentfulImage component, Rich Text renderer, SiteSettings layout load, deploy webhook
 **UI hint**: yes
 
 ### Phase 3: Portfolio & Video
@@ -109,7 +109,7 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 3/3 | Complete   | 2026-05-07 |
-| 2. CMS & Content Layer | 0/2 | In progress | - |
+| 2. CMS & Content Layer | 2/2 | Complete   | 2026-05-07 |
 | 3. Portfolio & Video | 0/0 | Not started | - |
 | 4. Content Pages | 0/0 | Not started | - |
 | 5. Design Polish & Animations | 0/0 | Not started | - |
