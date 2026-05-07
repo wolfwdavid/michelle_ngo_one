@@ -3,6 +3,7 @@
 	import { cubicOut } from 'svelte/easing';
 	import VideoFacade from './VideoFacade.svelte';
 	import VideoThumbnailCard from './VideoThumbnailCard.svelte';
+	import ScrollReveal from './ScrollReveal.svelte';
 	import type { Project } from '$lib/contentful/types';
 
 	let {
@@ -74,31 +75,35 @@
 			<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
 				<!-- Featured (first item) - larger on desktop -->
 				{#if initialProjects[0]}
-					<div class="lg:col-span-2 lg:row-span-2">
-						<VideoFacade
-							videoUrl={initialProjects[0].videoUrl ?? ''}
-							thumbnailUrl={initialProjects[0].thumbnailUrl}
-							title={initialProjects[0].title}
-							onclick={() => onPlayVideo(all, findIndexInAll(initialProjects[0]))}
-						/>
-						<a
-							href="{href}{initialProjects[0].slug}/"
-							class="mt-2 block truncate text-sm font-normal text-gray-900 hover:text-[#4A6FA5]"
-						>
-							{initialProjects[0].title}
-						</a>
-					</div>
+					<ScrollReveal>
+						<div class="lg:col-span-2 lg:row-span-2">
+							<VideoFacade
+								videoUrl={initialProjects[0].videoUrl ?? ''}
+								thumbnailUrl={initialProjects[0].thumbnailUrl}
+								title={initialProjects[0].title}
+								onclick={() => onPlayVideo(all, findIndexInAll(initialProjects[0]))}
+							/>
+							<a
+								href="{href}{initialProjects[0].slug}/"
+								class="mt-2 block truncate text-sm font-normal text-gray-900 hover:text-[#4A6FA5]"
+							>
+								{initialProjects[0].title}
+							</a>
+						</div>
+					</ScrollReveal>
 				{/if}
 
 				<!-- Secondary items (2-4) -->
-				{#each initialProjects.slice(1) as project}
-					<VideoThumbnailCard
-						thumbnailUrl={project.thumbnailUrl}
-						title={project.title}
-						videoUrl={project.videoUrl ?? ''}
-						onclick={() => onPlayVideo(all, findIndexInAll(project))}
-						href="{href}{project.slug}/"
-					/>
+				{#each initialProjects.slice(1) as project, i}
+					<ScrollReveal delay={(i + 1) * 75}>
+						<VideoThumbnailCard
+							thumbnailUrl={project.thumbnailUrl}
+							title={project.title}
+							videoUrl={project.videoUrl ?? ''}
+							onclick={() => onPlayVideo(all, findIndexInAll(project))}
+							href="{href}{project.slug}/"
+						/>
+					</ScrollReveal>
 				{/each}
 			</div>
 		{/if}
@@ -107,14 +112,16 @@
 		{#if expanded && expandedProjects.length > 0}
 			<div id={panelId} transition:slide={{ duration: 300, easing: cubicOut }}>
 				<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-					{#each expandedProjects as project}
-						<VideoThumbnailCard
-							thumbnailUrl={project.thumbnailUrl}
-							title={project.title}
-							videoUrl={project.videoUrl ?? ''}
-							onclick={() => onPlayVideo(all, findIndexInAll(project))}
-							href="{href}{project.slug}/"
-						/>
+					{#each expandedProjects as project, i}
+						<ScrollReveal delay={Math.min(i, 6) * 75}>
+							<VideoThumbnailCard
+								thumbnailUrl={project.thumbnailUrl}
+								title={project.title}
+								videoUrl={project.videoUrl ?? ''}
+								onclick={() => onPlayVideo(all, findIndexInAll(project))}
+								href="{href}{project.slug}/"
+							/>
+						</ScrollReveal>
 					{/each}
 				</div>
 			</div>

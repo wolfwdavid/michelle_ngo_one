@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SEO from '$lib/components/SEO.svelte';
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 
 	let { data } = $props();
 
@@ -46,49 +47,55 @@
 
 		{#if hasContent}
 			{#if resume.experience.length > 0}
-				<div class="border border-gray-200 rounded-sm p-6 mb-6">
-					<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-						Experience
-					</h2>
-					{#each resume.experience as entry}
-						<div class="py-4 border-b border-gray-100 last:border-b-0">
-							<p class="text-base font-semibold text-gray-900">{entry.title}</p>
-							<p class="text-sm text-gray-500 mt-1">{entry.company} | {entry.period}</p>
-							{#if entry.description}
-								<p class="text-base text-gray-700 mt-2 leading-relaxed">{entry.description}</p>
-							{/if}
-						</div>
-					{/each}
-				</div>
+				<ScrollReveal>
+					<div class="border border-gray-200 rounded-sm p-6 mb-6">
+						<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+							Experience
+						</h2>
+						{#each resume.experience as entry}
+							<div class="py-4 border-b border-gray-100 last:border-b-0">
+								<p class="text-base font-semibold text-gray-900">{entry.title}</p>
+								<p class="text-sm text-gray-500 mt-1">{entry.company} | {entry.period}</p>
+								{#if entry.description}
+									<p class="text-base text-gray-700 mt-2 leading-relaxed">{entry.description}</p>
+								{/if}
+							</div>
+						{/each}
+					</div>
+				</ScrollReveal>
 			{/if}
 
 			{#if resume.education.length > 0}
-				<div class="border border-gray-200 rounded-sm p-6 mb-6">
-					<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-						Education
-					</h2>
-					{#each resume.education as entry}
-						<div class="py-4 border-b border-gray-100 last:border-b-0">
-							<p class="text-base font-semibold text-gray-900">{entry.degree}</p>
-							<p class="text-sm text-gray-500 mt-1">{entry.institution} | {entry.year}</p>
-						</div>
-					{/each}
-				</div>
+				<ScrollReveal delay={75}>
+					<div class="border border-gray-200 rounded-sm p-6 mb-6">
+						<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+							Education
+						</h2>
+						{#each resume.education as entry}
+							<div class="py-4 border-b border-gray-100 last:border-b-0">
+								<p class="text-base font-semibold text-gray-900">{entry.degree}</p>
+								<p class="text-sm text-gray-500 mt-1">{entry.institution} | {entry.year}</p>
+							</div>
+						{/each}
+					</div>
+				</ScrollReveal>
 			{/if}
 
 			{#if resume.skills.length > 0}
-				<div class="border border-gray-200 rounded-sm p-6 mb-6">
-					<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
-						Skills
-					</h2>
-					<div class="flex flex-wrap gap-2">
-						{#each resume.skills as skill}
-							<span class="inline-flex bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full">
-								{skill}
-							</span>
-						{/each}
+				<ScrollReveal delay={150}>
+					<div class="border border-gray-200 rounded-sm p-6 mb-6">
+						<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+							Skills
+						</h2>
+						<div class="flex flex-wrap gap-2">
+							{#each resume.skills as skill}
+								<span class="inline-flex bg-gray-100 text-sm text-gray-700 px-3 py-1 rounded-full">
+									{skill}
+								</span>
+							{/each}
+						</div>
 					</div>
-				</div>
+				</ScrollReveal>
 			{/if}
 		{:else}
 			<div class="text-center py-12">

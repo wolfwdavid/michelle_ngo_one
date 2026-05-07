@@ -5,6 +5,7 @@
 	import HomepageAboutSnippet from '$lib/components/HomepageAboutSnippet.svelte';
 	import HomepagePressHighlights from '$lib/components/HomepagePressHighlights.svelte';
 	import VideoLightbox from '$lib/components/VideoLightbox.svelte';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 	import type { Project } from '$lib/contentful/types';
 
 	let { data } = $props();
@@ -39,23 +40,29 @@
 	heroThumbnailUrl={data.siteSettings?.heroThumbnailUrl ?? null}
 />
 
-{#each data.categories as cat}
-	<HomepageCategorySection
-		name={cat.name}
-		slug={cat.slug}
-		href={cat.href}
-		featured={cat.featured}
-		all={cat.all}
-		expanded={expandedCategory === cat.slug}
-		onToggle={() => toggleCategory(cat.slug)}
-		onPlayVideo={openLightbox}
-	/>
+{#each data.categories as cat, i}
+	<ScrollReveal delay={i * 75}>
+		<HomepageCategorySection
+			name={cat.name}
+			slug={cat.slug}
+			href={cat.href}
+			featured={cat.featured}
+			all={cat.all}
+			expanded={expandedCategory === cat.slug}
+			onToggle={() => toggleCategory(cat.slug)}
+			onPlayVideo={openLightbox}
+		/>
+	</ScrollReveal>
 {/each}
 
-<HomepageAboutSnippet />
+<ScrollReveal>
+	<HomepageAboutSnippet />
+</ScrollReveal>
 
 {#if data.pressHighlights.length > 0}
-	<HomepagePressHighlights items={data.pressHighlights} />
+	<ScrollReveal>
+		<HomepagePressHighlights items={data.pressHighlights} />
+	</ScrollReveal>
 {/if}
 
 <VideoLightbox

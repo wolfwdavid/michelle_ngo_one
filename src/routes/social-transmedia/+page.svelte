@@ -4,6 +4,7 @@
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
 	import VideoThumbnailCard from '$lib/components/VideoThumbnailCard.svelte';
 	import VideoLightbox from '$lib/components/VideoLightbox.svelte';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 
 	let { data } = $props();
 	let lightboxOpen = $state(false);
@@ -36,13 +37,15 @@
 	{:else}
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
 			{#each data.projects as project, i}
-				<VideoThumbnailCard
-					thumbnailUrl={project.thumbnailUrl}
-					title={project.title}
-					videoUrl={project.videoUrl ?? ''}
-					onclick={() => openLightbox(i)}
-					href="{base}/{data.categorySlug}/{project.slug}/"
-				/>
+				<ScrollReveal delay={Math.min(i, 6) * 75}>
+					<VideoThumbnailCard
+						thumbnailUrl={project.thumbnailUrl}
+						title={project.title}
+						videoUrl={project.videoUrl ?? ''}
+						onclick={() => openLightbox(i)}
+						href="{base}/{data.categorySlug}/{project.slug}/"
+					/>
+				</ScrollReveal>
 			{/each}
 		</div>
 	{/if}

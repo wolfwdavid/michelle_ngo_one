@@ -2,6 +2,7 @@
 	import SEO from '$lib/components/SEO.svelte';
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
 	import type { PressItem } from '$lib/contentful/types';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 
 	let { data } = $props();
 	const pressItems = $derived(data.pressItems);
@@ -34,7 +35,8 @@
 	{#if pressItems.length > 0}
 		{#each groupedByYear as [year, items], i}
 			<h2 class="text-lg font-semibold text-gray-900 {i === 0 ? 'mt-0' : 'mt-8'} mb-4">{year}</h2>
-			{#each items as item}
+			{#each items as item, j}
+				<ScrollReveal delay={Math.min(j, 6) * 75}>
 				<div class="py-4 border-b border-gray-200 last:border-b-0">
 					<p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">{item.source}</p>
 					<a
@@ -51,6 +53,7 @@
 					</a>
 					<p class="text-sm text-gray-500 mt-1">{formatDate(item.date)}</p>
 				</div>
+				</ScrollReveal>
 			{/each}
 		{/each}
 	{:else}

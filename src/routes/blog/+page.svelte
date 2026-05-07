@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import SEO from '$lib/components/SEO.svelte';
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
+	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 
 	let { data } = $props();
 
@@ -17,7 +18,8 @@
 
 	{#if posts.length > 0}
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-			{#each posts as post}
+			{#each posts as post, i}
+				<ScrollReveal delay={Math.min(i, 6) * 75}>
 				<a
 					href="{base}/blog/{post.slug}/"
 					class="border border-gray-200 rounded-sm overflow-hidden hover:shadow-sm transition-shadow duration-200 block"
@@ -38,6 +40,7 @@
 						<p class="text-sm text-gray-500 mt-2 line-clamp-3">{post.excerpt}</p>
 					</div>
 				</a>
+				</ScrollReveal>
 			{/each}
 		</div>
 	{:else}
