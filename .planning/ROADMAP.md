@@ -71,7 +71,7 @@ Plans:
 - [x] 03-01-PLAN.md — Video URL parser, category config, getProjectBySlug query, VideoFacade, VideoThumbnailCard, Breadcrumb components
 - [x] 03-02-PLAN.md — VideoLightbox component with focus trap, keyboard navigation, and prev/next browsing
 - [x] 03-03-PLAN.md — Homepage: hero with SiteSettings video reel, 6 category sections with accordion expand, about snippet, press highlights
-- [ ] 03-04-PLAN.md — All 6 category index pages + all 6 project detail [slug] routes (split into 2 tasks)
+- [x] 03-04-PLAN.md — All 6 category index pages + all 6 project detail [slug] routes (split into 2 tasks)
 - [ ] 03-05-PLAN.md — Filmography page with responsive table + final visual verification checkpoint
 **UI hint**: yes
 
