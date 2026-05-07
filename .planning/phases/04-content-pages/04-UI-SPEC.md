@@ -51,10 +51,11 @@ Exceptions: Contact form submit button has 44px minimum touch target height. PDF
 |------|------|--------|-------------|-------|
 | Body | 16px (text-base) | 400 (regular) | 1.5 | Bio text, blog post body, resume descriptions, press item titles, form labels, contact message |
 | Label | 14px (text-sm) | 400 (regular) | 1.4 | Breadcrumbs, press source/date, resume dates/company, blog post date/excerpt, form field labels, skill tags |
-| Heading | 24px (text-2xl) | 600 (semibold) | 1.2 | Page titles (About, Press, Resume, Blog, Contact), resume section headings, blog post title on detail page |
+| Subheading | 18px (text-lg) | 600 (semibold) | 1.2 | Press year headings, resume section headings, blog post in-body headings, contact success/error state headings |
+| Heading | 24px (text-2xl) | 600 (semibold) | 1.2 | Page titles (About, Press, Resume, Blog, Contact), blog post title on detail page |
 | Display | 14px (text-sm) | 600 (semibold) | 1.4 | Resume metadata keys (uppercase), press source line (uppercase), discipline card label |
 
-4 distinct sizes: 14px (label + display-label), 16px (body), 24px (heading). No display-scale heading needed for content pages -- consistent with Phase 3 inner pages.
+4 distinct pixel sizes: 14px (label + display-label), 16px (body), 18px (subheading), 24px (heading). 2 weights: 400 (regular) and 600 (semibold).
 
 Source: Phase 3 UI-SPEC typography, CONTEXT D-01 through D-15.
 
@@ -262,7 +263,9 @@ Form states (Claude's Discretion D-10 -- inline states, no redirect):
 - Idle: Form fields visible, submit button reads "Send Message"
 - Submitting: Submit button text changes to "Sending...", button disabled, opacity-50
 - Success: Form fields replaced by success message block. Green checkmark icon (24x24px, text-green-600) centered above "Message sent" heading (text-lg, font-semibold, text-gray-900) and "Thank you for reaching out. Michelle will get back to you soon." body (text-base, text-gray-500). "Send another message" link below (text-sm, text-accent, hover:text-accent-hover) to reset form.
-- Error: Red alert icon (24x24px, text-red-600) above error message. "Something went wrong" heading (text-lg, font-semibold, text-gray-900) and "Your message could not be sent. Please try again or email directly at {email}." body (text-base, text-gray-500). "Try again" button (text-sm, text-accent) to reset to idle.
+- Error: Red alert icon (24x24px, text-red-600) above error message. "Something went wrong" heading (text-lg, font-semibold, text-gray-900) and "Your message could not be sent. Please try again or email Michelle at {contactEmail}." body (text-base, text-gray-500). The `{contactEmail}` token is populated at runtime from the `SiteSettings.contactEmail` field in Contentful. This field must be added to the SiteSettings content type (see Implementation Note below). "Try again" button (text-sm, text-accent) to reset to idle.
+
+**Implementation Note -- contactEmail field:** The current `SiteSettingsFields` interface does not include a contact email. The executor must add a `contactEmail: string` field to both the Contentful SiteSettings content type and the `SiteSettingsFields` / `SiteSettingsData` TypeScript interfaces. The contact page load function fetches SiteSettings (already available via `getSiteSettings()` in the root layout) and passes `contactEmail` to the contact form component for use in the error state fallback copy.
 
 Validation: HTML5 native validation (required attribute on all 3 fields, type="email" on email). No custom JS validation needed.
 
@@ -301,7 +304,8 @@ Source: CONTEXT D-08 (Web3Forms), D-09 (minimal fields), D-10 (Claude's Discreti
 | Contact success body | Thank you for reaching out. Michelle will get back to you soon. |
 | Contact success reset link | Send another message |
 | Contact error heading | Something went wrong |
-| Contact error body | Your message could not be sent. Please try again or email directly. |
+| Contact error body | Your message could not be sent. Please try again or email Michelle at {contactEmail}. |
+| Contact error body runtime note | The `{contactEmail}` token is replaced at runtime with the value of `SiteSettings.contactEmail` from Contentful (e.g., "michelle@example.com"). The executor must ensure this field exists in the CMS and is passed to the contact form component. |
 | Contact error reset link | Try again |
 | Contact name label | Name |
 | Contact email label | Email |
