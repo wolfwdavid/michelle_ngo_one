@@ -64,13 +64,14 @@ Plans:
   3. Each portfolio category has a dedicated page with a video thumbnail grid showing play overlay icons
   4. Clicking a video thumbnail opens a lightbox/modal player (keyboard-navigable, focus-trapped) without leaving the page
   5. Each project has a detail view with case study content (role, challenge, approach, outcome, credits)
-**Plans**: 5 plans
+**Plans**: 6 plans
 
 Plans:
+- [ ] 03-00-PLAN.md — Wave 0: Test stubs for video parser, homepage load, category load, detail load, filmography load, VideoFacade behavior
 - [ ] 03-01-PLAN.md — Video URL parser, category config, getProjectBySlug query, VideoFacade, VideoThumbnailCard, Breadcrumb components
 - [ ] 03-02-PLAN.md — VideoLightbox component with focus trap, keyboard navigation, and prev/next browsing
-- [ ] 03-03-PLAN.md — Homepage: hero, 6 category sections with accordion expand, about snippet, press highlights
-- [ ] 03-04-PLAN.md — All 6 category pages with thumbnail grids + all 6 project detail page routes with [slug]
+- [ ] 03-03-PLAN.md — Homepage: hero with SiteSettings video reel, 6 category sections with accordion expand, about snippet, press highlights
+- [ ] 03-04-PLAN.md — All 6 category index pages + all 6 project detail [slug] routes (split into 2 tasks)
 - [ ] 03-05-PLAN.md — Filmography page with responsive table + final visual verification checkpoint
 **UI hint**: yes
 
@@ -114,6 +115,6 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 3/3 | Complete   | 2026-05-07 |
 | 2. CMS & Content Layer | 2/2 | Complete   | 2026-05-07 |
-| 3. Portfolio & Video | 0/5 | Planned | - |
+| 3. Portfolio & Video | 0/6 | Planned | - |
 | 4. Content Pages | 0/0 | Not started | - |
 | 5. Design Polish & Animations | 0/0 | Not started | - |
