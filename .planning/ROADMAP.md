@@ -104,7 +104,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — ScrollReveal + SkeletonCard components, page transition crossfade in layout, app.css shimmer keyframes + reduced-motion
+- [x] 05-01-PLAN.md — ScrollReveal + SkeletonCard components, page transition crossfade in layout, app.css shimmer keyframes + reduced-motion
 - [ ] 05-02-PLAN.md — Apply ScrollReveal across all pages + visual refinement (card treatment, hover effects, spacing, accent tokens)
 **UI hint**: yes
 
