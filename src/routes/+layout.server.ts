@@ -21,6 +21,7 @@ export const load: LayoutServerLoad = async () => {
 				resumePdfUrl: null,
 				heroVideoUrl: null,
 				heroThumbnailUrl: null,
+				contactEmail: '',
 			},
 		};
 	}
