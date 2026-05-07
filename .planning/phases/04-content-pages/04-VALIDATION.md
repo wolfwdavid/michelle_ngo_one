@@ -2,8 +2,9 @@
 phase: 4
 slug: content-pages
 status: draft
-nyquist_compliant: false
+nyquist_compliant: true
 wave_0_complete: false
+wave_0_plan: 04-00-PLAN.md
 created: 2026-05-07
 ---
 
@@ -38,11 +39,15 @@ created: 2026-05-07
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 04-01-01 | 01 | 1 | CONT-01 | integration | `npx vitest run src/routes/about` | ❌ W0 | ⬜ pending |
-| 04-01-02 | 01 | 1 | CONT-02 | integration | `npx vitest run src/routes/press` | ❌ W0 | ⬜ pending |
-| 04-01-03 | 01 | 1 | CONT-03 | integration | `npx vitest run src/routes/resume` | ❌ W0 | ⬜ pending |
-| 04-02-01 | 02 | 1 | CONT-04 | integration | `npx vitest run src/routes/blog` | ❌ W0 | ⬜ pending |
-| 04-03-01 | 03 | 2 | CONT-05 | integration | `npx vitest run src/routes/contact` | ❌ W0 | ⬜ pending |
+| 04-00-01 | 00 | 0 | ALL | scaffold | `npx vitest run src/routes/about.load.test.ts src/routes/press.load.test.ts src/routes/resume.load.test.ts src/routes/blog.load.test.ts --reporter=verbose` | W0 creates | ⬜ pending |
+| 04-00-02 | 00 | 0 | ALL | scaffold | `npx vitest run src/routes/contact.form.test.ts src/lib/__tests__/richtext-video.test.ts --reporter=verbose` | W0 creates | ⬜ pending |
+| 04-01-01 | 01 | 1 | CONT-01 | integration | `npx vitest run src/lib/__tests__/contentful-queries.test.ts src/routes/about.load.test.ts src/routes/press.load.test.ts -x` | W0 | ⬜ pending |
+| 04-01-02 | 01 | 1 | CONT-01 | integration | `npx vitest run src/routes/about.load.test.ts -x` | W0 | ⬜ pending |
+| 04-01-03 | 01 | 1 | CONT-02 | integration | `npx vitest run src/routes/press.load.test.ts -x` | W0 | ⬜ pending |
+| 04-02-01 | 02 | 2 | CONT-03 | integration | `npx vitest run src/routes/resume.load.test.ts -x` | W0 | ⬜ pending |
+| 04-02-02 | 02 | 2 | CONT-05 | integration | `npx vitest run src/routes/contact.form.test.ts -x` | W0 | ⬜ pending |
+| 04-03-01 | 03 | 2 | CONT-04 | integration | `npx vitest run src/lib/__tests__/richtext-video.test.ts -x` | W0 | ⬜ pending |
+| 04-03-02 | 03 | 2 | CONT-04 | integration | `npx vitest run src/routes/blog.load.test.ts -x` | W0 | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -50,11 +55,14 @@ created: 2026-05-07
 
 ## Wave 0 Requirements
 
-- [ ] Test stubs for About page server load and rendering (CONT-01)
-- [ ] Test stubs for Press page query and chronological ordering (CONT-02)
-- [ ] Test stubs for Resume page structured data and PDF link (CONT-03)
-- [ ] Test stubs for Blog index and blog post detail pages (CONT-04)
-- [ ] Test stubs for Contact form submission via Web3Forms (CONT-05)
+Plan `04-00-PLAN.md` creates all 6 test stub files:
+
+- [ ] `src/routes/about.load.test.ts` -- mock getPageBySlug, verify load returns page data (CONT-01)
+- [ ] `src/routes/press.load.test.ts` -- mock getPressItems, verify year grouping logic (CONT-02)
+- [ ] `src/routes/resume.load.test.ts` -- mock getResume, verify structured data shape (CONT-03)
+- [ ] `src/routes/blog.load.test.ts` -- mock getBlogPosts/getBlogPostBySlug, verify entries() and load (CONT-04)
+- [ ] `src/routes/contact.form.test.ts` -- mock fetch to Web3Forms, verify state transitions (CONT-05)
+- [ ] `src/lib/__tests__/richtext-video.test.ts` -- verify INLINES.HYPERLINK renders video placeholder for Vimeo/YouTube URLs
 
 *Existing vitest infrastructure covers framework needs. Only test files need to be created.*
 
@@ -74,11 +82,11 @@ created: 2026-05-07
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all MISSING references
-- [ ] No watch-mode flags
-- [ ] Feedback latency < 10s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] All tasks have `<automated>` verify pointing to specific test files
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 plan (04-00-PLAN.md) covers all test stub creation
+- [x] No watch-mode flags
+- [x] Feedback latency < 10s
+- [x] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** pending execution of Wave 0
