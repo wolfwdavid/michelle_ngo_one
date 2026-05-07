@@ -56,8 +56,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### CMS
 
-- [ ] **CMS-01**: Contentful headless CMS integration — all projects, press, blog posts, and resume managed via Contentful
-- [ ] **CMS-02**: Content model supports: Projects (with category, video URLs, case study fields), Press Items, Blog Posts, Resume, Site Settings
+- [x] **CMS-01**: Contentful headless CMS integration — all projects, press, blog posts, and resume managed via Contentful
+- [x] **CMS-02**: Content model supports: Projects (with category, video URLs, case study fields), Press Items, Blog Posts, Resume, Site Settings
 - [ ] **CMS-03**: Contentful webhook triggers GitHub Actions rebuild for automated content updates
 
 ### Technical
@@ -132,8 +132,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DES-03 | Phase 5 | Pending |
 | DES-04 | Phase 1 | Complete |
 | DES-05 | Phase 1 | Complete |
-| CMS-01 | Phase 2 | Pending |
-| CMS-02 | Phase 2 | Pending |
+| CMS-01 | Phase 2 | Complete |
+| CMS-02 | Phase 2 | Complete |
 | CMS-03 | Phase 2 | Pending |
 | TECH-01 | Phase 1 | Complete |
 | TECH-02 | Phase 1 | Complete |

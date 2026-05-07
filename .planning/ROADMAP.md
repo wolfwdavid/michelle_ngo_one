@@ -50,7 +50,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Contentful SDK client, TypeScript content types, query functions, image helper, Vitest setup
+- [x] 02-01-PLAN.md — Contentful SDK client, TypeScript content types, query functions, image helper, Vitest setup
 - [ ] 02-02-PLAN.md — SEO component, ContentfulImage component, Rich Text renderer, SiteSettings layout load, deploy webhook
 **UI hint**: yes
 
