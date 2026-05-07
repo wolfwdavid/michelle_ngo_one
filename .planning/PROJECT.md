@@ -12,11 +12,13 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Modern SvelteKit portfolio site replacing current WordPress site — Validated in Phase 01: Foundation & Deployment
+- [x] GitHub Pages deployment (static adapter) — Validated in Phase 01: Foundation & Deployment
+- [x] Responsive design (mobile, tablet, desktop) — Validated in Phase 01: Foundation & Deployment
+- [x] Links to IMDb, LinkedIn, Vimeo, YouTube — Validated in Phase 01: Foundation & Deployment
 
 ### Active
 
-- [ ] Modern SvelteKit portfolio site replacing current WordPress site
 - [ ] Clean, minimal aesthetic (Isotope Films-inspired) with subtle fade-in animations
 - [ ] All current sections preserved: Advertising (Broadcast & Digital Producing, Copywriting), Film-TV, UX Design, Social & Transmedia, Publishing, About
 - [ ] Video integration: featured work embedded (Vimeo/YouTube), rest as clickable thumbnails
@@ -25,9 +27,6 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 - [ ] Press/News page (Yvonne Russo-inspired) for press mentions, articles, features
 - [ ] Resume/CV page (viewable and downloadable)
 - [ ] Blog for written content, articles, behind-the-scenes
-- [ ] GitHub Pages deployment (static adapter)
-- [ ] Responsive design (mobile, tablet, desktop)
-- [ ] Links to IMDb, LinkedIn, Vimeo, YouTube
 
 ### Out of Scope
 
@@ -62,11 +61,13 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| SvelteKit over other frameworks | Client requirement | — Pending |
+| SvelteKit over other frameworks | Client requirement | Validated — Phase 01 |
 | Contentful over Sanity/Strapi | Client preference, generous free tier, structured content | — Pending |
-| GitHub Pages hosting | Client preference, free, works with static adapter | — Pending |
+| GitHub Pages hosting | Client preference, free, works with static adapter | Validated — Phase 01 |
 | Clean/minimal over dark/cinematic | Client preference — let the work speak | — Pending |
 | Mix of embedded + thumbnail videos | Featured work plays on-site, rest links out — balance between richness and performance | — Pending |
+| Svelte 5 runes over stores | Svelte 5 is current stable; runes are the standard going forward | Validated — Phase 01 |
+| Tailwind v4 CSS-first config | No JS config needed, Vite plugin integration | Validated — Phase 01 |
 
 ## Evolution
 
@@ -86,4 +87,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-07 after initialization*
+*Last updated: 2026-05-07 after Phase 01 completion — Foundation & Deployment*
