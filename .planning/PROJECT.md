@@ -22,7 +22,7 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 - [ ] Clean, minimal aesthetic (Isotope Films-inspired) with subtle fade-in animations
 - [ ] All current sections preserved: Advertising (Broadcast & Digital Producing, Copywriting), Film-TV, UX Design, Social & Transmedia, Publishing, About
 - [ ] Video integration: featured work embedded (Vimeo/YouTube), rest as clickable thumbnails
-- [ ] Contentful headless CMS for content management (projects, videos, press, blog)
+- [x] Contentful headless CMS for content management (projects, videos, press, blog) — Validated in Phase 02: CMS Content Layer
 - [ ] Contact form for direct outreach
 - [ ] Press/News page (Yvonne Russo-inspired) for press mentions, articles, features
 - [ ] Resume/CV page (viewable and downloadable)
@@ -62,7 +62,7 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | SvelteKit over other frameworks | Client requirement | Validated — Phase 01 |
-| Contentful over Sanity/Strapi | Client preference, generous free tier, structured content | — Pending |
+| Contentful over Sanity/Strapi | Client preference, generous free tier, structured content | Validated — Phase 02 |
 | GitHub Pages hosting | Client preference, free, works with static adapter | Validated — Phase 01 |
 | Clean/minimal over dark/cinematic | Client preference — let the work speak | — Pending |
 | Mix of embedded + thumbnail videos | Featured work plays on-site, rest links out — balance between richness and performance | — Pending |
@@ -87,4 +87,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-07 after Phase 01 completion — Foundation & Deployment*
+*Last updated: 2026-05-07 after Phase 02 completion — CMS Content Layer*
