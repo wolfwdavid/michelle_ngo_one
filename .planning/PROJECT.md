@@ -20,8 +20,8 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 ### Active
 
 - [ ] Clean, minimal aesthetic (Isotope Films-inspired) with subtle fade-in animations
-- [ ] All current sections preserved: Advertising (Broadcast & Digital Producing, Copywriting), Film-TV, UX Design, Social & Transmedia, Publishing, About
-- [ ] Video integration: featured work embedded (Vimeo/YouTube), rest as clickable thumbnails
+- [x] All current sections preserved: Advertising (Broadcast & Digital Producing, Copywriting), Film-TV, UX Design, Social & Transmedia, Publishing, About — Validated in Phase 03: Portfolio & Video
+- [x] Video integration: featured work embedded (Vimeo/YouTube), rest as clickable thumbnails — Validated in Phase 03: Portfolio & Video
 - [x] Contentful headless CMS for content management (projects, videos, press, blog) — Validated in Phase 02: CMS Content Layer
 - [ ] Contact form for direct outreach
 - [ ] Press/News page (Yvonne Russo-inspired) for press mentions, articles, features
@@ -65,7 +65,7 @@ Michelle's diverse creative work speaks for itself — the site must present it 
 | Contentful over Sanity/Strapi | Client preference, generous free tier, structured content | Validated — Phase 02 |
 | GitHub Pages hosting | Client preference, free, works with static adapter | Validated — Phase 01 |
 | Clean/minimal over dark/cinematic | Client preference — let the work speak | — Pending |
-| Mix of embedded + thumbnail videos | Featured work plays on-site, rest links out — balance between richness and performance | — Pending |
+| Mix of embedded + thumbnail videos | Featured work plays on-site, rest links out — balance between richness and performance | Validated — Phase 03 |
 | Svelte 5 runes over stores | Svelte 5 is current stable; runes are the standard going forward | Validated — Phase 01 |
 | Tailwind v4 CSS-first config | No JS config needed, Vite plugin integration | Validated — Phase 01 |
 
@@ -87,4 +87,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-07 after Phase 02 completion — CMS Content Layer*
+*Last updated: 2026-05-07 after Phase 03 completion — Portfolio & Video*
