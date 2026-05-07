@@ -48,13 +48,13 @@
 	}
 </script>
 
-<section class="border-t border-[#E5E7EB] px-4 py-8 lg:px-8">
+<section class="border-t border-gray-200 px-4 py-12 lg:py-16 lg:px-8">
 	<div class="mx-auto max-w-7xl">
 		<!-- Header row -->
 		<div class="flex items-baseline justify-between">
 			<button
 				onclick={onToggle}
-				class="cursor-pointer border-none bg-transparent p-0 text-2xl font-semibold text-gray-900 hover:text-[#4A6FA5]"
+				class="cursor-pointer border-none bg-transparent p-0 text-2xl font-semibold text-gray-900 hover:text-accent"
 				aria-expanded={expanded}
 				aria-controls={panelId}
 			>
@@ -63,7 +63,7 @@
 			{#if all.length > 4}
 				<button
 					onclick={onToggle}
-					class="cursor-pointer border-none bg-transparent p-0 text-sm text-gray-500 hover:text-[#4A6FA5]"
+					class="cursor-pointer border-none bg-transparent p-0 text-sm text-gray-500 hover:text-accent"
 				>
 					See all {all.length} projects
 				</button>
@@ -72,7 +72,7 @@
 
 		<!-- Initial display: up to 4 items -->
 		{#if initialProjects.length > 0}
-			<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+			<div class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				<!-- Featured (first item) - larger on desktop -->
 				{#if initialProjects[0]}
 					<ScrollReveal>
@@ -85,7 +85,7 @@
 							/>
 							<a
 								href="{href}{initialProjects[0].slug}/"
-								class="mt-2 block truncate text-sm font-normal text-gray-900 hover:text-[#4A6FA5]"
+								class="mt-2 block truncate text-sm font-normal text-gray-900 hover:text-accent"
 							>
 								{initialProjects[0].title}
 							</a>
@@ -111,7 +111,7 @@
 		<!-- Expanded content (accordion) -->
 		{#if expanded && expandedProjects.length > 0}
 			<div id={panelId} transition:slide={{ duration: 300, easing: cubicOut }}>
-				<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+				<div class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 					{#each expandedProjects as project, i}
 						<ScrollReveal delay={Math.min(i, 6) * 75}>
 							<VideoThumbnailCard

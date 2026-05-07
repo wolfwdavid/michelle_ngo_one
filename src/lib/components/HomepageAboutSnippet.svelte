@@ -13,7 +13,7 @@
 			</p>
 			<a
 				href="{base}/about/"
-				class="mt-4 inline-block text-sm text-[#4A6FA5] hover:text-[#3B5D8C]"
+				class="mt-4 inline-block text-sm text-accent hover:text-accent-hover"
 			>
 				Read Michelle's full bio
 			</a>

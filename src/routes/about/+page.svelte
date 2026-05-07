@@ -43,12 +43,12 @@
 		<!-- Disciplines grid -->
 		<div class="mt-12">
 			<h2 class="text-2xl font-semibold text-gray-900 mb-6">Disciplines</h2>
-			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
 				{#each CATEGORIES as cat, i}
 					<ScrollReveal delay={Math.min(i, 6) * 75}>
 						<a
 							href={cat.href}
-							class="border border-gray-200 rounded-sm px-4 py-6 text-center hover:border-[#4A6FA5] transition-colors duration-200"
+							class="border border-gray-200 rounded-lg shadow-sm px-4 py-6 text-center hover:border-accent hover:shadow-md transition-shadow duration-200"
 						>
 							<span class="text-sm font-semibold text-gray-900">{cat.name}</span>
 						</a>

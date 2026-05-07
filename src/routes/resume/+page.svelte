@@ -25,7 +25,7 @@
 					href={resumePdfUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-flex items-center gap-2 bg-[#4A6FA5] text-white px-4 py-2.5 rounded-sm text-sm font-semibold hover:bg-[#3B5D8C] transition-colors"
+					class="inline-flex items-center gap-2 bg-accent text-white px-4 py-2.5 rounded-sm text-sm font-semibold hover:bg-accent-hover transition-colors"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@
 		{#if hasContent}
 			{#if resume.experience.length > 0}
 				<ScrollReveal>
-					<div class="border border-gray-200 rounded-sm p-6 mb-6">
+					<div class="border border-gray-200 rounded-lg shadow-sm p-6 mb-6">
 						<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
 							Experience
 						</h2>
@@ -67,7 +67,7 @@
 
 			{#if resume.education.length > 0}
 				<ScrollReveal delay={75}>
-					<div class="border border-gray-200 rounded-sm p-6 mb-6">
+					<div class="border border-gray-200 rounded-lg shadow-sm p-6 mb-6">
 						<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
 							Education
 						</h2>
@@ -83,7 +83,7 @@
 
 			{#if resume.skills.length > 0}
 				<ScrollReveal delay={150}>
-					<div class="border border-gray-200 rounded-sm p-6 mb-6">
+					<div class="border border-gray-200 rounded-lg shadow-sm p-6 mb-6">
 						<h2 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
 							Skills
 						</h2>

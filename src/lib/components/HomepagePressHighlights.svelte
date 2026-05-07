@@ -20,7 +20,7 @@
 								href={item.url}
 								target="_blank"
 								rel="noopener noreferrer"
-								class="mt-1 block text-base font-semibold text-gray-900 hover:text-[#4A6FA5]"
+								class="mt-1 block text-base font-semibold text-gray-900 hover:text-accent"
 							>
 								{item.title}
 							</a>

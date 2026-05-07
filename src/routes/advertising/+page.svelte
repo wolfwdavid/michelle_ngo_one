@@ -21,7 +21,7 @@
 	description="Michelle Ngo's {data.categoryName.toLowerCase()} portfolio"
 />
 
-<div class="mx-auto max-w-7xl px-4 py-8 lg:px-8">
+<div class="mx-auto max-w-7xl px-4 py-12 lg:py-16 lg:px-8">
 	<Breadcrumb items={[
 		{ label: 'Home', href: `${base}/` },
 		{ label: data.categoryName },
@@ -35,7 +35,7 @@
 			<p class="mt-2 text-base text-gray-500">Projects for this category are being added. Check back soon.</p>
 		</div>
 	{:else}
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 			{#each data.projects as project, i}
 				<ScrollReveal delay={Math.min(i, 6) * 75}>
 					<VideoThumbnailCard

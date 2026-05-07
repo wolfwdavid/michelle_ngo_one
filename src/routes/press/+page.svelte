@@ -43,7 +43,7 @@
 						href={item.url}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="text-base font-semibold text-gray-900 mt-1 hover:text-[#4A6FA5] transition-colors inline-flex items-center gap-1"
+						class="text-base font-semibold text-gray-900 mt-1 hover:text-accent transition-colors inline-flex items-center gap-1"
 					>
 						{item.title}
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3 text-gray-400 inline-block">

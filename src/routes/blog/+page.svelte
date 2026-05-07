@@ -17,12 +17,12 @@
 	<h1 class="text-2xl font-semibold text-gray-900 mt-4 mb-8">Blog</h1>
 
 	{#if posts.length > 0}
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 			{#each posts as post, i}
 				<ScrollReveal delay={Math.min(i, 6) * 75}>
 				<a
 					href="{base}/blog/{post.slug}/"
-					class="border border-gray-200 rounded-sm overflow-hidden hover:shadow-sm transition-shadow duration-200 block"
+					class="border border-gray-200 rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200 ease-out block"
 				>
 					{#if post.coverImageUrl}
 						<img
