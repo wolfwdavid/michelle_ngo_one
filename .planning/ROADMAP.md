@@ -85,10 +85,12 @@ Plans:
   3. Resume/CV page is viewable on-page and downloadable as PDF
   4. Blog displays rich text posts with images and embedded video
   5. Contact form (name, email, message) submits successfully via static-compatible service
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Data layer extensions (PageData type, getPageBySlug query, contactEmail in SiteSettings) + About page + Press page
+- [ ] 04-02-PLAN.md — Resume page with sectioned cards and PDF download + Contact form with Web3Forms integration
+- [ ] 04-03-PLAN.md — Rich Text video embed extension + Blog index and Blog post detail pages
 **UI hint**: yes
 
 ### Phase 5: Design Polish & Animations
@@ -116,5 +118,5 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 | 1. Foundation & Deployment | 3/3 | Complete   | 2026-05-07 |
 | 2. CMS & Content Layer | 2/2 | Complete   | 2026-05-07 |
 | 3. Portfolio & Video | 6/6 | Complete   | 2026-05-07 |
-| 4. Content Pages | 0/0 | Not started | - |
+| 4. Content Pages | 0/3 | In progress | - |
 | 5. Design Polish & Animations | 0/0 | Not started | - |
