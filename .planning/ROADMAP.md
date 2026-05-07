@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Deployment** - SvelteKit project with routing, navigation, Tailwind styling, and working GitHub Pages deployment (completed 2026-05-07)
 - [x] **Phase 2: CMS & Content Layer** - Contentful integration with content models, data fetching, image optimization, and automated rebuilds (completed 2026-05-07)
-- [ ] **Phase 3: Portfolio & Video** - Homepage, all portfolio category pages, project details, and video playback with facade pattern
+- [x] **Phase 3: Portfolio & Video** - Homepage, all portfolio category pages, project details, and video playback with facade pattern (completed 2026-05-07)
 - [ ] **Phase 4: Content Pages** - About, Press/News, Resume/CV, Blog, and Contact form
 - [ ] **Phase 5: Design Polish & Animations** - Scroll animations, page transitions, and visual refinement across all pages
 
@@ -72,7 +72,7 @@ Plans:
 - [x] 03-02-PLAN.md — VideoLightbox component with focus trap, keyboard navigation, and prev/next browsing
 - [x] 03-03-PLAN.md — Homepage: hero with SiteSettings video reel, 6 category sections with accordion expand, about snippet, press highlights
 - [x] 03-04-PLAN.md — All 6 category index pages + all 6 project detail [slug] routes (split into 2 tasks)
-- [ ] 03-05-PLAN.md — Filmography page with responsive table + final visual verification checkpoint
+- [x] 03-05-PLAN.md — Filmography page with responsive table + final visual verification checkpoint
 **UI hint**: yes
 
 ### Phase 4: Content Pages
@@ -115,6 +115,6 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 3/3 | Complete   | 2026-05-07 |
 | 2. CMS & Content Layer | 2/2 | Complete   | 2026-05-07 |
-| 3. Portfolio & Video | 0/6 | Planned | - |
+| 3. Portfolio & Video | 6/6 | Complete   | 2026-05-07 |
 | 4. Content Pages | 0/0 | Not started | - |
 | 5. Design Polish & Animations | 0/0 | Not started | - |
