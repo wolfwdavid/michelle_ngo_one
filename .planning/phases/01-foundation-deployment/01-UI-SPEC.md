@@ -50,7 +50,7 @@ Exceptions: Header height is 64px (h-16 in Tailwind). Mobile drawer width is 288
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Body | 16px (text-base) | 400 (regular) | 1.5 | Placeholder page text, drawer nav links, footer text |
-| Label | 14px (text-sm) | 500 (medium) | 1.4 | Desktop nav items, social link labels, copyright line |
+| Label | 14px (text-sm) | 400 (regular) | 1.4 | Desktop nav items, social link labels, copyright line |
 | Heading | 24px (text-2xl) | 600 (semibold) | 1.2 | Placeholder page titles (e.g., "Advertising", "About") |
 | Display | 32px (text-3xl) | 600 (semibold) | 1.2 | Homepage placeholder hero text ("Michelle Ngo") |
 
@@ -106,9 +106,9 @@ Contents:
 - Center/Right (desktop, lg:flex): Nav items in a row with 24px gap
 - Right (mobile, lg:hidden): Hamburger button (24x24px icon, 44x44px touch target)
 
-Desktop nav items: `text-sm font-medium text-gray-800 hover:text-accent transition-colors duration-200`
+Desktop nav items: `text-sm font-normal text-gray-800 hover:text-accent transition-colors duration-200`
 
-Active link: `text-accent font-medium` (accent color applied to current route)
+Active link: `text-accent` (accent color applied to current route)
 
 ### Mobile Drawer
 
@@ -123,7 +123,7 @@ Active link: `text-accent font-medium` (accent color applied to current route)
 
 Contents:
 - Top: Close button (X icon, 44x44px touch target, top-right)
-- Middle: Nav links stacked vertically, 48px touch target per link (py-3), 18px text
+- Middle: Nav links stacked vertically, 48px touch target per link (py-3), 16px text (text-base)
 - Bottom (mt-auto): Social icons in a horizontal row, 24px gap, 44x44px touch targets
 - Divider line above social icons: 1px solid #E5E7EB
 
@@ -160,7 +160,7 @@ Placeholder content per page:
 
 Homepage placeholder is special:
 - Display heading: "Michelle Ngo" at text-3xl (32px), font-semibold, centered
-- Subheading: "Producer. Filmmaker. Creative." at text-lg (18px), text-gray-500, centered, mt-2
+- Subheading: "Producer. Filmmaker. Creative." at text-base (16px), text-gray-500, centered, mt-2
 - Both centered vertically and horizontally in the viewport (min-h-[60vh], flex, items-center, justify-center)
 
 ---
