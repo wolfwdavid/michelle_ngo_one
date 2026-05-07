@@ -17,9 +17,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Navigation
 
-- [ ] **NAV-01**: Sticky header navigation with links: Home, Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, About
-- [ ] **NAV-02**: Navigation is responsive — collapses to mobile menu on small screens
-- [ ] **NAV-03**: Navigation links scroll to or navigate to corresponding sections/pages
+- [x] **NAV-01**: Sticky header navigation with links: Home, Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, About
+- [x] **NAV-02**: Navigation is responsive — collapses to mobile menu on small screens
+- [x] **NAV-03**: Navigation links scroll to or navigate to corresponding sections/pages
 
 ### Portfolio
 
@@ -44,15 +44,15 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **CONT-03**: Resume/CV page — viewable on-page and downloadable as PDF
 - [ ] **CONT-04**: Blog with rich text posts, images, and video embeds
 - [ ] **CONT-05**: Contact form (name, email, message) using static-compatible service (Web3Forms or similar)
-- [ ] **CONT-06**: Social links in header/footer (IMDb, LinkedIn, Vimeo, YouTube)
+- [x] **CONT-06**: Social links in header/footer (IMDb, LinkedIn, Vimeo, YouTube)
 
 ### Design
 
 - [ ] **DES-01**: Clean, minimal aesthetic inspired by Isotope Films — light backgrounds, ample whitespace
 - [ ] **DES-02**: Subtle scroll animations (fade-in on scroll) using Svelte transitions
 - [ ] **DES-03**: Animated page transitions between routes
-- [ ] **DES-04**: Responsive design — mobile, tablet, desktop breakpoints
-- [ ] **DES-05**: Modern typography with clear hierarchy
+- [x] **DES-04**: Responsive design — mobile, tablet, desktop breakpoints
+- [x] **DES-05**: Modern typography with clear hierarchy
 
 ### CMS
 
@@ -108,9 +108,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-03 | Phase 3 | Pending |
 | HOME-04 | Phase 3 | Pending |
 | HOME-05 | Phase 3 | Pending |
-| NAV-01 | Phase 1 | Pending |
-| NAV-02 | Phase 1 | Pending |
-| NAV-03 | Phase 1 | Pending |
+| NAV-01 | Phase 1 | Complete |
+| NAV-02 | Phase 1 | Complete |
+| NAV-03 | Phase 1 | Complete |
 | PORT-01 | Phase 3 | Pending |
 | PORT-02 | Phase 3 | Pending |
 | PORT-03 | Phase 3 | Pending |
@@ -126,12 +126,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-03 | Phase 4 | Pending |
 | CONT-04 | Phase 4 | Pending |
 | CONT-05 | Phase 4 | Pending |
-| CONT-06 | Phase 1 | Pending |
+| CONT-06 | Phase 1 | Complete |
 | DES-01 | Phase 5 | Pending |
 | DES-02 | Phase 5 | Pending |
 | DES-03 | Phase 5 | Pending |
-| DES-04 | Phase 1 | Pending |
-| DES-05 | Phase 1 | Pending |
+| DES-04 | Phase 1 | Complete |
+| DES-05 | Phase 1 | Complete |
 | CMS-01 | Phase 2 | Pending |
 | CMS-02 | Phase 2 | Pending |
 | CMS-03 | Phase 2 | Pending |
