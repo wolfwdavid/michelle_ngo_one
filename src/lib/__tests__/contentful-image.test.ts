@@ -36,6 +36,7 @@ describe('contentfulSrcset', () => {
 	it('prepends https: to protocol-relative URLs', () => {
 		const srcset = contentfulSrcset('//images.ctfassets.net/space/abc123/photo.jpg');
 		expect(srcset).toContain('https://images.ctfassets.net');
-		expect(srcset).not.toContain('//images.ctfassets.net');
+		// Ensure no bare protocol-relative URL (without https: prefix)
+		expect(srcset).not.toMatch(/(?<!https:)\/\/images\.ctfassets\.net/);
 	});
 });
