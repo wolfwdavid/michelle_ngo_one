@@ -5,6 +5,7 @@ import type {
 	BlogPost,
 	SiteSettingsData,
 	ResumeData,
+	PageData,
 	ProjectContentTypeId,
 } from './types';
 import type { Document } from '@contentful/rich-text-types';
@@ -132,6 +133,7 @@ export async function getSiteSettings(): Promise<SiteSettingsData> {
 		heroThumbnailUrl: fields.heroThumbnail?.fields?.file?.url
 			? `https:${fields.heroThumbnail.fields.file.url}`
 			: null,
+		contactEmail: (fields.contactEmail as string) ?? '',
 	};
 }
 
@@ -150,6 +152,27 @@ export async function getResume(): Promise<ResumeData> {
 		experience: fields.experience ?? [],
 		education: fields.education ?? [],
 		skills: fields.skills ?? [],
+	};
+}
+
+export async function getPageBySlug(slug: string): Promise<PageData | null> {
+	const entries = await contentfulClient.getEntries({
+		content_type: 'page',
+		'fields.slug': slug,
+		limit: 1,
+	});
+
+	const item = entries.items[0];
+	if (!item) return null;
+
+	return {
+		title: (item.fields.title as string) ?? '',
+		slug: (item.fields.slug as string) ?? '',
+		body: (item.fields.body as Document) ?? null,
+		photoUrl: (item.fields.photo as any)?.fields?.file?.url
+			? `https:${(item.fields.photo as any).fields.file.url}`
+			: null,
+		seoDescription: (item.fields.seoDescription as string) ?? '',
 	};
 }
 

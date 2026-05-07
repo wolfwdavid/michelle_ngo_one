@@ -85,6 +85,7 @@ export interface SiteSettingsFields {
 	resumePdf?: Asset;
 	heroVideoUrl?: string;
 	heroThumbnail?: Asset;
+	contactEmail?: string;
 }
 
 export interface ResumeFields {
@@ -92,6 +93,14 @@ export interface ResumeFields {
 	experience: Array<{ title: string; company: string; period: string; description: string }>;
 	education: Array<{ degree: string; institution: string; year: string }>;
 	skills: string[];
+}
+
+export interface PageFields {
+	title: string;
+	slug: string;
+	body: Document;
+	photo?: Asset;
+	seoDescription?: string;
 }
 
 // ── Normalized Component-Facing Types ─────────────────────────────────
@@ -142,6 +151,15 @@ export interface SiteSettingsData {
 	resumePdfUrl: string | null;
 	heroVideoUrl: string | null;
 	heroThumbnailUrl: string | null;
+	contactEmail: string;
+}
+
+export interface PageData {
+	title: string;
+	slug: string;
+	body: Document | null;
+	photoUrl: string | null;
+	seoDescription: string;
 }
 
 export interface ResumeData {
