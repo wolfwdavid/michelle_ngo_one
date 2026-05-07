@@ -11,8 +11,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **HOME-01**: Homepage displays hero section with Michelle's name, tagline, and brief intro
 - [x] **HOME-02**: Homepage shows one featured video per category (6 total: Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, Copywriting)
-- [ ] **HOME-03**: Clicking a category on the homepage expands remaining videos from that category inline with animation
-- [ ] **HOME-04**: Homepage includes a short about snippet with link to full About page
+- [x] **HOME-03**: Clicking a category on the homepage expands remaining videos from that category inline with animation
+- [x] **HOME-04**: Homepage includes a short about snippet with link to full About page
 - [x] **HOME-05**: Homepage displays recent press highlights
 
 ### Navigation
@@ -105,8 +105,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | HOME-01 | Phase 3 | Complete |
 | HOME-02 | Phase 3 | Complete |
-| HOME-03 | Phase 3 | Pending |
-| HOME-04 | Phase 3 | Pending |
+| HOME-03 | Phase 3 | Complete |
+| HOME-04 | Phase 3 | Complete |
 | HOME-05 | Phase 3 | Complete |
 | NAV-01 | Phase 1 | Complete |
 | NAV-02 | Phase 1 | Complete |
