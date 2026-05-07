@@ -101,10 +101,11 @@ Plans:
   1. Elements fade in on scroll with subtle animation as visitor scrolls through pages
   2. Route changes use animated page transitions
   3. Site maintains clean, minimal Isotope Films-inspired aesthetic with light backgrounds and ample whitespace across all pages
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md — ScrollReveal + SkeletonCard components, page transition crossfade in layout, app.css shimmer keyframes + reduced-motion
+- [ ] 05-02-PLAN.md — Apply ScrollReveal across all pages + visual refinement (card treatment, hover effects, spacing, accent tokens)
 **UI hint**: yes
 
 ## Progress
@@ -119,4 +120,4 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 | 2. CMS & Content Layer | 2/2 | Complete   | 2026-05-07 |
 | 3. Portfolio & Video | 6/6 | Complete   | 2026-05-07 |
 | 4. Content Pages | 4/4 | Complete   | 2026-05-07 |
-| 5. Design Polish & Animations | 0/0 | Not started | - |
+| 5. Design Polish & Animations | 0/2 | Not started | - |
