@@ -48,7 +48,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Design
 
-- [ ] **DES-01**: Clean, minimal aesthetic inspired by Isotope Films — light backgrounds, ample whitespace
+- [x] **DES-01**: Clean, minimal aesthetic inspired by Isotope Films — light backgrounds, ample whitespace
 - [x] **DES-02**: Subtle scroll animations (fade-in on scroll) using Svelte transitions
 - [x] **DES-03**: Animated page transitions between routes
 - [x] **DES-04**: Responsive design — mobile, tablet, desktop breakpoints
@@ -127,7 +127,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-04 | Phase 4 | Complete |
 | CONT-05 | Phase 4 | Complete |
 | CONT-06 | Phase 1 | Complete |
-| DES-01 | Phase 5 | Pending |
+| DES-01 | Phase 5 | Complete |
 | DES-02 | Phase 5 | Complete |
 | DES-03 | Phase 5 | Complete |
 | DES-04 | Phase 1 | Complete |
