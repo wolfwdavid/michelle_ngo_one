@@ -24,17 +24,17 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Portfolio
 
 - [ ] **PORT-01**: Each category (Advertising, Film-TV, UX Design, Social & Transmedia, Publishing, Copywriting) has a dedicated page showing all projects
-- [ ] **PORT-02**: Project entries display as video thumbnail grid with play overlay icons (Isotope Films-style)
-- [ ] **PORT-03**: Featured projects use embedded Vimeo/YouTube players (facade pattern — thumbnail first, load iframe on click)
-- [ ] **PORT-04**: Secondary projects display as clickable thumbnails
+- [x] **PORT-02**: Project entries display as video thumbnail grid with play overlay icons (Isotope Films-style)
+- [x] **PORT-03**: Featured projects use embedded Vimeo/YouTube players (facade pattern — thumbnail first, load iframe on click)
+- [x] **PORT-04**: Secondary projects display as clickable thumbnails
 - [ ] **PORT-05**: Each project has a detail view with case study content (role, challenge, approach, outcome, credits)
-- [ ] **PORT-06**: Video embeds use lazy-loading facade pattern for performance (critical with 147+ videos)
+- [x] **PORT-06**: Video embeds use lazy-loading facade pattern for performance (critical with 147+ videos)
 
 ### Video
 
 - [ ] **VID-01**: Lightbox/modal video player — click thumbnail to watch without leaving the page
 - [ ] **VID-02**: Modal handles keyboard navigation and focus trapping for accessibility
-- [ ] **VID-03**: Videos sourced from Vimeo (user2149742) and YouTube playlist
+- [x] **VID-03**: Videos sourced from Vimeo (user2149742) and YouTube playlist
 - [ ] **VID-04**: Filmography/credits list page with structured data (year, role, production type)
 
 ### Content Pages
@@ -112,14 +112,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NAV-02 | Phase 1 | Complete |
 | NAV-03 | Phase 1 | Complete |
 | PORT-01 | Phase 3 | Pending |
-| PORT-02 | Phase 3 | Pending |
-| PORT-03 | Phase 3 | Pending |
-| PORT-04 | Phase 3 | Pending |
+| PORT-02 | Phase 3 | Complete |
+| PORT-03 | Phase 3 | Complete |
+| PORT-04 | Phase 3 | Complete |
 | PORT-05 | Phase 3 | Pending |
-| PORT-06 | Phase 3 | Pending |
+| PORT-06 | Phase 3 | Complete |
 | VID-01 | Phase 3 | Pending |
 | VID-02 | Phase 3 | Pending |
-| VID-03 | Phase 3 | Pending |
+| VID-03 | Phase 3 | Complete |
 | VID-04 | Phase 3 | Pending |
 | CONT-01 | Phase 4 | Pending |
 | CONT-02 | Phase 4 | Pending |

@@ -68,7 +68,7 @@ Plans:
 
 Plans:
 - [ ] 03-00-PLAN.md — Wave 0: Test stubs for video parser, homepage load, category load, detail load, filmography load, VideoFacade behavior
-- [ ] 03-01-PLAN.md — Video URL parser, category config, getProjectBySlug query, VideoFacade, VideoThumbnailCard, Breadcrumb components
+- [x] 03-01-PLAN.md — Video URL parser, category config, getProjectBySlug query, VideoFacade, VideoThumbnailCard, Breadcrumb components
 - [ ] 03-02-PLAN.md — VideoLightbox component with focus trap, keyboard navigation, and prev/next browsing
 - [ ] 03-03-PLAN.md — Homepage: hero with SiteSettings video reel, 6 category sections with accordion expand, about snippet, press highlights
 - [ ] 03-04-PLAN.md — All 6 category index pages + all 6 project detail [slug] routes (split into 2 tasks)
