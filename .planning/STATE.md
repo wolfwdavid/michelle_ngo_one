@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 03-00-PLAN.md
-last_updated: "2026-05-07T17:07:11.753Z"
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-05-07T17:09:56.120Z"
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 11
-  completed_plans: 7
+  completed_plans: 8
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-05-07)
 ## Current Position
 
 Phase: 03 (portfolio-video) — EXECUTING
-Plan: 3 of 6
+Plan: 4 of 6
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Plan: 3 of 6
 | Phase 02 P02 | 4min | 3 tasks | 9 files |
 | Phase 03 P01 | 3min | 2 tasks | 7 files |
 | Phase 03-portfolio-video P00 | 3min | 2 tasks | 5 files |
+| Phase 03-portfolio-video P02 | 1min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -77,6 +78,7 @@ Recent decisions affecting current work:
 - [Phase 02]: Layout server load has try/catch fallback for builds without CMS credentials
 - [Phase 03]: Facade pattern for video embeds: thumbnail + play overlay, iframe only loads on user click
 - [Phase 03-portfolio-video]: VideoFacade tests use parseVideoUrl directly (no jsdom needed)
+- [Phase 03-portfolio-video]: tabindex=-1 on dialog element for Svelte a11y; exported openAt() method for parent trigger with focus restoration
 
 ### Pending Todos
 
@@ -89,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-07T17:07:11.749Z
-Stopped at: Completed 03-00-PLAN.md
+Last session: 2026-05-07T17:09:56.116Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None

@@ -32,8 +32,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Video
 
-- [ ] **VID-01**: Lightbox/modal video player — click thumbnail to watch without leaving the page
-- [ ] **VID-02**: Modal handles keyboard navigation and focus trapping for accessibility
+- [x] **VID-01**: Lightbox/modal video player — click thumbnail to watch without leaving the page
+- [x] **VID-02**: Modal handles keyboard navigation and focus trapping for accessibility
 - [x] **VID-03**: Videos sourced from Vimeo (user2149742) and YouTube playlist
 - [x] **VID-04**: Filmography/credits list page with structured data (year, role, production type)
 
@@ -117,8 +117,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PORT-04 | Phase 3 | Complete |
 | PORT-05 | Phase 3 | Complete |
 | PORT-06 | Phase 3 | Complete |
-| VID-01 | Phase 3 | Pending |
-| VID-02 | Phase 3 | Pending |
+| VID-01 | Phase 3 | Complete |
+| VID-02 | Phase 3 | Complete |
 | VID-03 | Phase 3 | Complete |
 | VID-04 | Phase 3 | Complete |
 | CONT-01 | Phase 4 | Pending |
