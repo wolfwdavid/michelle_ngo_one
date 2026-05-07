@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="min-h-[60vh] flex items-center justify-center">
+	<div class="text-center">
+		<h1 class="text-3xl font-semibold text-gray-900">Michelle Ngo</h1>
+		<p class="mt-2 text-base text-gray-500">Producer. Filmmaker. Creative.</p>
+	</div>
+</div>
