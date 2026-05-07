@@ -88,7 +88,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Data layer extensions (PageData type, getPageBySlug query, contactEmail in SiteSettings) + About page + Press page
+- [x] 04-01-PLAN.md — Data layer extensions (PageData type, getPageBySlug query, contactEmail in SiteSettings) + About page + Press page
 - [ ] 04-02-PLAN.md — Resume page with sectioned cards and PDF download + Contact form with Web3Forms integration
 - [ ] 04-03-PLAN.md — Rich Text video embed extension + Blog index and Blog post detail pages
 **UI hint**: yes
