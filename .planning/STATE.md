@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-05-07T18:55:46.402Z"
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-05-07T18:59:28.141Z"
 progress:
   total_phases: 5
   completed_phases: 3
   total_plans: 15
-  completed_plans: 13
+  completed_plans: 14
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-05-07)
 ## Current Position
 
 Phase: 04 (content-pages) — EXECUTING
-Plan: 3 of 4
+Plan: 4 of 4
 
 ## Performance Metrics
 
@@ -59,6 +59,7 @@ Plan: 3 of 4
 | Phase 03-portfolio-video P05 | 3min | 1 tasks | 3 files |
 | Phase 04-content-pages P00 | 2min | 2 tasks | 6 files |
 | Phase 04 P01 | 3min | 3 tasks | 6 files |
+| Phase 04 P02 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -91,6 +92,9 @@ Recent decisions affecting current work:
 - [Phase 04-content-pages]: Used it.todo() for page load stubs, real RED assertions for richtext-video tests against existing renderRichText function
 - [Phase 04]: Used $derived.by() for year-grouping logic in Press page (Svelte 5 block expression syntax)
 - [Phase 04]: Breadcrumb items array excludes Home since component renders it automatically
+- [Phase 04]: Resume PDF URL falls back from resume data to siteSettings.resumePdfUrl
+- [Phase 04]: Contact form is entirely client-side with Web3Forms POST, no server load needed
+- [Phase 04]: Error retry preserves user input; success reset clears form
 
 ### Pending Todos
 
@@ -103,6 +107,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-07T18:55:46.399Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-05-07T18:59:28.137Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None
