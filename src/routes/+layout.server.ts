@@ -19,6 +19,8 @@ export const load: LayoutServerLoad = async () => {
 					youtube: '',
 				},
 				resumePdfUrl: null,
+				heroVideoUrl: null,
+				heroThumbnailUrl: null,
 			},
 		};
 	}

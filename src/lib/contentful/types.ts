@@ -83,6 +83,8 @@ export interface SiteSettingsFields {
 	vimeoUrl: string;
 	youtubeUrl: string;
 	resumePdf?: Asset;
+	heroVideoUrl?: string;
+	heroThumbnail?: Asset;
 }
 
 export interface ResumeFields {
@@ -138,6 +140,8 @@ export interface SiteSettingsData {
 		youtube: string;
 	};
 	resumePdfUrl: string | null;
+	heroVideoUrl: string | null;
+	heroThumbnailUrl: string | null;
 }
 
 export interface ResumeData {

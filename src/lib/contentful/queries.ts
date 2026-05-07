@@ -128,6 +128,10 @@ export async function getSiteSettings(): Promise<SiteSettingsData> {
 		resumePdfUrl: fields.resumePdf?.fields?.file?.url
 			? `https:${fields.resumePdf.fields.file.url}`
 			: null,
+		heroVideoUrl: (fields.heroVideoUrl as string) ?? null,
+		heroThumbnailUrl: fields.heroThumbnail?.fields?.file?.url
+			? `https:${fields.heroThumbnail.fields.file.url}`
+			: null,
 	};
 }
 
