@@ -1,14 +1,56 @@
 <script lang="ts">
 	import { renderRichText } from '$lib/contentful/richtext';
+	import { parseVideoUrl } from '$lib/utils/video';
 	import type { Document } from '@contentful/rich-text-types';
 
 	let { document, class: className = '' }: { document: Document | null | undefined; class?: string } = $props();
 
 	const html = $derived(renderRichText(document));
+
+	let containerEl: HTMLDivElement | undefined = $state(undefined);
+
+	$effect(() => {
+		if (!containerEl) return;
+		// Re-run when html changes
+		void html;
+		const placeholders = containerEl.querySelectorAll('[data-video-facade]');
+		for (const el of placeholders) {
+			const url = decodeURIComponent(el.getAttribute('data-video-facade') ?? '');
+			const title = decodeURIComponent(el.getAttribute('data-video-title') ?? '');
+			const parsed = parseVideoUrl(url);
+			if (!parsed) continue;
+
+			// Build thumbnail URL
+			const thumbUrl = parsed.platform === 'vimeo'
+				? `https://vumbnail.com/${parsed.id}.jpg`
+				: `https://img.youtube.com/vi/${parsed.id}/hqdefault.jpg`;
+
+			// Build iframe src (loaded on click)
+			const iframeSrc = parsed.platform === 'vimeo'
+				? `https://player.vimeo.com/video/${parsed.id}?autoplay=1`
+				: `https://www.youtube.com/embed/${parsed.id}?autoplay=1`;
+
+			// Replace placeholder with facade HTML
+			el.innerHTML = `
+				<button class="relative w-full h-full group cursor-pointer bg-black" aria-label="Play ${title || 'video'}">
+					<img src="${thumbUrl}" alt="${title || 'Video thumbnail'}" class="w-full h-full object-cover" loading="lazy" />
+					<div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+						<svg class="w-16 h-16 text-white drop-shadow-lg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+					</div>
+				</button>
+			`;
+
+			// Add click handler to swap thumbnail for iframe
+			const btn = el.querySelector('button');
+			btn?.addEventListener('click', () => {
+				el.innerHTML = `<iframe src="${iframeSrc}" class="w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${title || 'Embedded video'}"></iframe>`;
+			});
+		}
+	});
 </script>
 
 {#if html}
-	<div class="prose max-w-3xl {className}">
+	<div bind:this={containerEl} class="prose max-w-3xl {className}">
 		{@html html}
 	</div>
 {/if}
