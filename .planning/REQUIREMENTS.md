@@ -62,10 +62,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Technical
 
-- [ ] **TECH-01**: Built with SvelteKit and Svelte 5 (runes)
-- [ ] **TECH-02**: Styled with Tailwind CSS v4
-- [ ] **TECH-03**: Static site generation via adapter-static for GitHub Pages
-- [ ] **TECH-04**: GitHub Pages deployment with .nojekyll file and correct base path config
+- [x] **TECH-01**: Built with SvelteKit and Svelte 5 (runes)
+- [x] **TECH-02**: Styled with Tailwind CSS v4
+- [x] **TECH-03**: Static site generation via adapter-static for GitHub Pages
+- [x] **TECH-04**: GitHub Pages deployment with .nojekyll file and correct base path config
 - [ ] **TECH-05**: SEO fundamentals — meta tags, Open Graph, structured data (Person schema)
 - [ ] **TECH-06**: Image optimization (WebP/AVIF, responsive srcset, lazy loading)
 
@@ -135,10 +135,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CMS-01 | Phase 2 | Pending |
 | CMS-02 | Phase 2 | Pending |
 | CMS-03 | Phase 2 | Pending |
-| TECH-01 | Phase 1 | Pending |
-| TECH-02 | Phase 1 | Pending |
-| TECH-03 | Phase 1 | Pending |
-| TECH-04 | Phase 1 | Pending |
+| TECH-01 | Phase 1 | Complete |
+| TECH-02 | Phase 1 | Complete |
+| TECH-03 | Phase 1 | Complete |
+| TECH-04 | Phase 1 | Complete |
 | TECH-05 | Phase 2 | Pending |
 | TECH-06 | Phase 2 | Pending |
 

@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold SvelteKit project, configure Tailwind v4, adapter-static, GitHub Actions workflow
+- [x] 01-01-PLAN.md — Scaffold SvelteKit project, configure Tailwind v4, adapter-static, GitHub Actions workflow
 - [ ] 01-02-PLAN.md — Build responsive navigation, layout components, and all placeholder route pages
 - [ ] 01-03-PLAN.md — Deploy to GitHub Pages and verify site works end-to-end
 **UI hint**: yes
