@@ -50,11 +50,12 @@ Exceptions: Video lightbox iframe maintains 16:9 aspect ratio at max-width 960px
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Body | 16px (text-base) | 400 (regular) | 1.5 | Project descriptions, about snippet text, press highlight excerpts, metadata values |
+| Tagline | 16px (text-base) | 400 (regular) | 1.5 | Hero tagline below "Michelle Ngo" heading, styled text-gray-500 to differentiate from body text |
 | Label | 14px (text-sm) | 400 (regular) | 1.4 | Category label above section, breadcrumb, metadata keys (role, client, year), "See all" link, thumbnail project titles |
 | Heading | 24px (text-2xl) | 600 (semibold) | 1.2 | Category section titles on homepage, category page title, project detail page title, filmography page title |
 | Display | 40px (text-4xl on desktop, text-3xl on mobile) | 600 (semibold) | 1.1 | Homepage hero: "Michelle Ngo" |
 
-Hero tagline: 18px (text-lg), weight 400, line-height 1.5, text-gray-500.
+4 distinct sizes: 14px (label), 16px (body + tagline), 24px (heading), 40px/32px (display). Tagline shares the body size but is distinguished by text-gray-500 color.
 
 Source: Phase 1 UI-SPEC (base typography), D-01 (hero with name and tagline), DES-05 (clear hierarchy).
 
@@ -104,7 +105,7 @@ Components built in this phase, with visual specs.
 
 Contents:
 - "Michelle Ngo" display heading: text-4xl desktop / text-3xl mobile, font-semibold, text-gray-900, centered
-- Tagline from SiteSettings: text-lg, font-normal, text-gray-500, centered, mt-2
+- Tagline from SiteSettings: text-base, font-normal, text-gray-500, centered, mt-2
 - Featured video reel (facade): 16:9 aspect ratio, max-width 800px, centered, mt-8. Thumbnail from Contentful with play overlay icon centered.
 
 Source: D-01 (hero with name, tagline, featured reel), D-10 (facade pattern).
@@ -155,7 +156,7 @@ Source: D-05 (slide-down expansion), D-06 (accordion behavior).
 Contents:
 - "About Michelle" heading: text-2xl, font-semibold, text-gray-900, mb-4
 - 2-3 sentence excerpt: text-base, text-gray-700, line-height 1.5, text-center
-- "Learn more" link: text-sm, text-accent, hover:text-accent-hover, mt-4, centered
+- "Read Michelle's full bio" link: text-sm, text-accent, hover:text-accent-hover, mt-4, centered
 
 About snippet length: 2-3 sentences, approximately 40-60 words. Sourced from SiteSettings tagline or a dedicated About excerpt field if available, otherwise hardcoded.
 
@@ -290,7 +291,7 @@ Source: D-16 (Claude's Discretion -- table chosen for structured data scannabili
 | Category section "see all" link | See all {N} projects |
 | Category section heading | {Category name: Advertising, Film & TV, UX Design, Social & Transmedia, Publishing, Copywriting} |
 | About snippet heading | About Michelle |
-| About snippet CTA | Learn more |
+| About snippet CTA | Read Michelle's full bio |
 | Press highlights heading | Recent Press |
 | Breadcrumb home | Home |
 | Category page heading | {Category name} |
@@ -358,7 +359,7 @@ Source: D-01 through D-16, HOME-01 through HOME-05, PORT-01 through PORT-06, VID
 | Click breadcrumb "Home" | Navigate to homepage. |
 | Click breadcrumb category | Navigate to category page. |
 | Click project title in grid | Navigate to project detail page (/{category}/{slug}/). |
-| Click "Learn more" in about snippet | Navigate to /about/ page. |
+| Click "Read Michelle's full bio" in about snippet | Navigate to /about/ page. |
 | Click press highlight title | Open external press URL in new tab. |
 
 ### Responsive Breakpoints
