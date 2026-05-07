@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Deployment** - SvelteKit project with routing, navigation, Tailwind styling, and working GitHub Pages deployment (completed 2026-05-07)
 - [x] **Phase 2: CMS & Content Layer** - Contentful integration with content models, data fetching, image optimization, and automated rebuilds (completed 2026-05-07)
 - [x] **Phase 3: Portfolio & Video** - Homepage, all portfolio category pages, project details, and video playback with facade pattern (completed 2026-05-07)
-- [ ] **Phase 4: Content Pages** - About, Press/News, Resume/CV, Blog, and Contact form
+- [x] **Phase 4: Content Pages** - About, Press/News, Resume/CV, Blog, and Contact form (completed 2026-05-07)
 - [ ] **Phase 5: Design Polish & Animations** - Scroll animations, page transitions, and visual refinement across all pages
 
 ## Phase Details
@@ -90,7 +90,7 @@ Plans:
 Plans:
 - [x] 04-01-PLAN.md — Data layer extensions (PageData type, getPageBySlug query, contactEmail in SiteSettings) + About page + Press page
 - [x] 04-02-PLAN.md — Resume page with sectioned cards and PDF download + Contact form with Web3Forms integration
-- [ ] 04-03-PLAN.md — Rich Text video embed extension + Blog index and Blog post detail pages
+- [x] 04-03-PLAN.md — Rich Text video embed extension + Blog index and Blog post detail pages
 **UI hint**: yes
 
 ### Phase 5: Design Polish & Animations
@@ -118,5 +118,5 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 | 1. Foundation & Deployment | 3/3 | Complete   | 2026-05-07 |
 | 2. CMS & Content Layer | 2/2 | Complete   | 2026-05-07 |
 | 3. Portfolio & Video | 6/6 | Complete   | 2026-05-07 |
-| 4. Content Pages | 0/3 | In progress | - |
+| 4. Content Pages | 4/4 | Complete   | 2026-05-07 |
 | 5. Design Polish & Animations | 0/0 | Not started | - |
