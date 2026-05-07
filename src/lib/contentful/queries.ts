@@ -148,3 +148,34 @@ export async function getResume(): Promise<ResumeData> {
 		skills: fields.skills ?? [],
 	};
 }
+
+export async function getProjectBySlug(
+	contentTypeId: ProjectContentTypeId,
+	slug: string
+): Promise<Project | null> {
+	const entries = await contentfulClient.getEntries({
+		content_type: contentTypeId,
+		'fields.slug': slug,
+		limit: 1,
+	});
+
+	const item = entries.items[0];
+	if (!item) return null;
+
+	return {
+		title: (item.fields.title as string) ?? '',
+		slug: (item.fields.slug as string) ?? '',
+		description: (item.fields.description as string) ?? '',
+		thumbnailUrl: (item.fields.thumbnail as any)?.fields?.file?.url ?? null,
+		videoUrl: (item.fields.videoUrl as string) ?? null,
+		featured: (item.fields.featured as boolean) ?? false,
+		sortOrder: (item.fields.sortOrder as number) ?? 0,
+		client: item.fields.client as string | undefined,
+		agency: item.fields.agency as string | undefined,
+		role: item.fields.role as string | undefined,
+		year: item.fields.year as number | undefined,
+		productionType: item.fields.productionType as string | undefined,
+		platform: item.fields.platform as string | undefined,
+		publisher: item.fields.publisher as string | undefined,
+	};
+}
