@@ -30,10 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Navigation collapses to a mobile menu on small screens and works across mobile, tablet, and desktop
   4. Social links (IMDb, LinkedIn, Vimeo, YouTube) are visible in header/footer
   5. Pages use consistent typography hierarchy and Tailwind-based styling
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
+- [ ] 01-01-PLAN.md — Scaffold SvelteKit project, configure Tailwind v4, adapter-static, GitHub Actions workflow
+- [ ] 01-02-PLAN.md — Build responsive navigation, layout components, and all placeholder route pages
+- [ ] 01-03-PLAN.md — Deploy to GitHub Pages and verify site works end-to-end
 **UI hint**: yes
 
 ### Phase 2: CMS & Content Layer
@@ -99,12 +101,12 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in parallel.
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployment | 0/0 | Not started | - |
+| 1. Foundation & Deployment | 0/3 | Planning complete | - |
 | 2. CMS & Content Layer | 0/0 | Not started | - |
 | 3. Portfolio & Video | 0/0 | Not started | - |
 | 4. Content Pages | 0/0 | Not started | - |
