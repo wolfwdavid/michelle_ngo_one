@@ -47,10 +47,12 @@ Plans:
   2. Publishing content in Contentful triggers an automatic GitHub Actions rebuild and deployment
   3. Images served from Contentful are optimized (WebP/AVIF, responsive srcset, lazy loaded)
   4. Pages have correct SEO meta tags and Open Graph data sourced from CMS content
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
+- [ ] 02-01-PLAN.md — Contentful SDK client, TypeScript content types, query functions, image helper, Vitest setup
+- [ ] 02-02-PLAN.md — SEO component, ContentfulImage component, Rich Text renderer, SiteSettings layout load, deploy webhook
+**UI hint**: yes
 
 ### Phase 3: Portfolio & Video
 **Goal**: Visitors can explore Michelle's full portfolio across all disciplines and watch video work directly on the site
@@ -107,7 +109,7 @@ Note: Phase 3 and Phase 4 both depend on Phase 2 and could theoretically run in 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployment | 3/3 | Complete   | 2026-05-07 |
-| 2. CMS & Content Layer | 0/0 | Not started | - |
+| 2. CMS & Content Layer | 0/2 | In progress | - |
 | 3. Portfolio & Video | 0/0 | Not started | - |
 | 4. Content Pages | 0/0 | Not started | - |
 | 5. Design Polish & Animations | 0/0 | Not started | - |
