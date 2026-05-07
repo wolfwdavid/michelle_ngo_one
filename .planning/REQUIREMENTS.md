@@ -39,11 +39,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content Pages
 
-- [ ] **CONT-01**: About page with full bio, professional photo, disciplines overview
-- [ ] **CONT-02**: Press/News page with chronological feed of press mentions (title, publication, date, excerpt, link)
-- [ ] **CONT-03**: Resume/CV page — viewable on-page and downloadable as PDF
-- [ ] **CONT-04**: Blog with rich text posts, images, and video embeds
-- [ ] **CONT-05**: Contact form (name, email, message) using static-compatible service (Web3Forms or similar)
+- [x] **CONT-01**: About page with full bio, professional photo, disciplines overview
+- [x] **CONT-02**: Press/News page with chronological feed of press mentions (title, publication, date, excerpt, link)
+- [x] **CONT-03**: Resume/CV page — viewable on-page and downloadable as PDF
+- [x] **CONT-04**: Blog with rich text posts, images, and video embeds
+- [x] **CONT-05**: Contact form (name, email, message) using static-compatible service (Web3Forms or similar)
 - [x] **CONT-06**: Social links in header/footer (IMDb, LinkedIn, Vimeo, YouTube)
 
 ### Design
@@ -121,11 +121,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VID-02 | Phase 3 | Complete |
 | VID-03 | Phase 3 | Complete |
 | VID-04 | Phase 3 | Complete |
-| CONT-01 | Phase 4 | Pending |
-| CONT-02 | Phase 4 | Pending |
-| CONT-03 | Phase 4 | Pending |
-| CONT-04 | Phase 4 | Pending |
-| CONT-05 | Phase 4 | Pending |
+| CONT-01 | Phase 4 | Complete |
+| CONT-02 | Phase 4 | Complete |
+| CONT-03 | Phase 4 | Complete |
+| CONT-04 | Phase 4 | Complete |
+| CONT-05 | Phase 4 | Complete |
 | CONT-06 | Phase 1 | Complete |
 | DES-01 | Phase 5 | Pending |
 | DES-02 | Phase 5 | Pending |
