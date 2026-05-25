@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed quick task 260525-hk0 (contentful offline stub)
-last_updated: "2026-05-25T16:48:13.980Z"
+stopped_at: Completed quick task 260525-jkc (prerender.handleUnseenRoutes='warn', live deploy verified)
+last_updated: "2026-05-25T18:18:08.904Z"
 progress:
   total_phases: 5
   completed_phases: 5
@@ -103,6 +103,7 @@ Recent decisions affecting current work:
 - [Phase 05]: ScrollReveal uses CSS class toggle for fade-up; grid overlay pattern for page transitions; shimmer keyframes global in app.css
 - [Phase 05]: Stagger delay capped at Math.min(i,6)*75 max 450ms to prevent sluggish reveals on large grids
 - [Phase 260525-hk0]: [Quick 260525-hk0]: Contentful client uses offline {items:[]} stub when CONTENTFUL_SPACE_ID/ACCESS_TOKEN missing; preserves byte-identical createClient() path when present
+- [Phase 260525-jkc]: [Quick 260525-jkc]: kit.prerender.handleUnseenRoutes='warn' lets GH Pages deploy succeed when Contentful entries() returns []; adapter strict:true preserved to keep narrow scope
 
 ### Pending Todos
 
@@ -118,9 +119,10 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260525-hk0 | Contentful client offline stub for local dev without credentials | 2026-05-25 | 2b111e3 | [260525-hk0-patch-contentful-client-and-queries-to-r](./quick/260525-hk0-patch-contentful-client-and-queries-to-r/) |
+| 260525-jkc | kit.prerender.handleUnseenRoutes='warn' to unblock GH Pages deploy when Contentful returns empty entries | 2026-05-25 | ed59392 | [260525-jkc-add-prerender-handleunseenroutes-warn-to](./quick/260525-jkc-add-prerender-handleunseenroutes-warn-to/) |
 
 ## Session Continuity
 
-Last session: 2026-05-25T16:48:04.620Z
-Stopped at: Completed quick task 260525-hk0 (contentful offline stub)
+Last session: 2026-05-25T18:17:35.370Z
+Stopped at: Completed quick task 260525-jkc (prerender.handleUnseenRoutes='warn', live deploy verified)
 Resume file: None
