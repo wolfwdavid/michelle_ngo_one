@@ -113,6 +113,12 @@ None yet.
 - Must decide custom domain vs. project site deployment before Phase 1 implementation (affects base path config)
 - Contentful free tier commercial use policy should be verified
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260525-hk0 | Contentful client offline stub for local dev without credentials | 2026-05-25 | 2b111e3 | [260525-hk0-patch-contentful-client-and-queries-to-r](./quick/260525-hk0-patch-contentful-client-and-queries-to-r/) |
+
 ## Session Continuity
 
 Last session: 2026-05-25T16:48:04.620Z
