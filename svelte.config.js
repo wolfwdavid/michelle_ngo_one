@@ -14,6 +14,9 @@ const config = {
 		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : '/michelle_ngo_one'
+		},
+		prerender: {
+			handleUnseenRoutes: 'warn'
 		}
 	}
 };
